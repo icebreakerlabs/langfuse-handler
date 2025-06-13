@@ -40,9 +40,9 @@ class PromptGenerator:
         """
         if env_path:
             dotenv.load_dotenv(env_path)
-            os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
-            os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
-            os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
+        os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
+        os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
+        os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
         self.langfuse = get_client()
 
     def generate_prompt(self, prompt_name: str, prompt: str | list, **kwargs) -> str:
@@ -82,10 +82,10 @@ class PromptRunner:
         """
         if env_path:
             dotenv.load_dotenv(env_path)
-            os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
-            os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
-            os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
-            os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+        os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
+        os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
+        os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
+        os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
             
         if model_client == "openai":
             self.model_client = OpenAI()

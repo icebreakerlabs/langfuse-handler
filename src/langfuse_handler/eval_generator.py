@@ -39,9 +39,9 @@ class DatasetGenerator:
         """
         if env_path:
             dotenv.load_dotenv(env_path)
-            os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
-            os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
-            os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
+        os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
+        os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
+        os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
         self.langfuse = get_client()
 
     def create_dataset_item(self, dataset_name: str, item: dict):
@@ -93,10 +93,10 @@ class ExperimentRunner:
         """
         if env_path:
             dotenv.load_dotenv(env_path)
-            os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
-            os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
-            os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
-            os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+        os.environ["LANGFUSE_PUBLIC_KEY"] = os.getenv("LANGFUSE_PUBLIC_KEY")
+        os.environ["LANGFUSE_SECRET_KEY"] = os.getenv("LANGFUSE_SECRET_KEY")
+        os.environ["LANGFUSE_HOST"] = os.getenv("LANGFUSE_HOST")
+        os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
             
         self.langfuse = get_client()
 
