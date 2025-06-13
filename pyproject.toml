@@ -1,11 +1,30 @@
 [project]
 name = "langfuse-handler"
 version = "0.1.0"
-description = "Add your description here"
+description = "Utilities for managing, generating, and running prompts with Langfuse and LLMs"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Charlie Rothschild", email = "charlie@icebreaker.xyz" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
+    "asyncio>=3.4.3",
     "dotenv>=0.9.9",
     "langfuse>=3.0.0",
     "openai>=1.85.0",
+    "tqdm>=4.67.1",
 ]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/icebreakerlabs/langfuse-handler"
+"Repository" = "https://github.com/icebreakerlabs/langfuse-handler"
