@@ -1,0 +1,503 @@
+[
+    {
+        "input": {
+            "text": "@alice has shown amazing product expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Product\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Product recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Product",
+            "bot_response": "\u2705 Attestation for Skill: Product recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @bob for their stellar design skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Design\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Design recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Design",
+            "bot_response": "\u2705 Attestation for Skill: Design recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@charlie's engineering game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Engineering\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Engineering recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Engineering",
+            "bot_response": "\u2705 Attestation for Skill: Engineering recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @dana's brilliant work in marketing?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Marketing\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Marketing recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Marketing",
+            "bot_response": "\u2705 Attestation for Skill: Marketing recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @erin handles all things legal."
+        },
+        "output": "{\n  \"skill\": \"Skill: Legal\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Legal recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Legal",
+            "bot_response": "\u2705 Attestation for Skill: Legal recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@frank has shown amazing finance expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Finance\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Finance recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Finance",
+            "bot_response": "\u2705 Attestation for Skill: Finance recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @gina for their stellar operations skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Operations\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Operations recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Operations",
+            "bot_response": "\u2705 Attestation for Skill: Operations recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@harry's sales game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Sales\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Sales recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Sales",
+            "bot_response": "\u2705 Attestation for Skill: Sales recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @ivan's brilliant work in support?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Support\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Support recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Support",
+            "bot_response": "\u2705 Attestation for Skill: Support recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @juliet handles all things talent."
+        },
+        "output": "{\n  \"skill\": \"Skill: Talent\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Talent recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Talent",
+            "bot_response": "\u2705 Attestation for Skill: Talent recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@kyle has shown amazing data expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Data\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Data recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Data",
+            "bot_response": "\u2705 Attestation for Skill: Data recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @linda for their stellar product skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Product\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Product recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Product",
+            "bot_response": "\u2705 Attestation for Skill: Product recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@mona's design game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Design\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Design recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Design",
+            "bot_response": "\u2705 Attestation for Skill: Design recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @nate's brilliant work in engineering?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Engineering\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Engineering recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Engineering",
+            "bot_response": "\u2705 Attestation for Skill: Engineering recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @olivia handles all things marketing."
+        },
+        "output": "{\n  \"skill\": \"Skill: Marketing\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Marketing recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Marketing",
+            "bot_response": "\u2705 Attestation for Skill: Marketing recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@paul has shown amazing legal expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Legal\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Legal recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Legal",
+            "bot_response": "\u2705 Attestation for Skill: Legal recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @quinn for their stellar finance skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Finance\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Finance recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Finance",
+            "bot_response": "\u2705 Attestation for Skill: Finance recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@riley's operations game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Operations\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Operations recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Operations",
+            "bot_response": "\u2705 Attestation for Skill: Operations recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @sara's brilliant work in sales?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Sales\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Sales recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Sales",
+            "bot_response": "\u2705 Attestation for Skill: Sales recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @tom handles all things support."
+        },
+        "output": "{\n  \"skill\": \"Skill: Support\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Support recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Support",
+            "bot_response": "\u2705 Attestation for Skill: Support recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@alice has shown amazing talent expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Data\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Data recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Talent",
+            "bot_response": "\u2705 Attestation for Skill: Talent recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @bob for their stellar data skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Data\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Data recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Data",
+            "bot_response": "\u2705 Attestation for Skill: Data recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@charlie's product game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Product\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Product recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Product",
+            "bot_response": "\u2705 Attestation for Skill: Product recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @dana's brilliant work in design?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Design\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Design recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Design",
+            "bot_response": "\u2705 Attestation for Skill: Design recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @erin handles all things engineering."
+        },
+        "output": "{\n  \"skill\": \"Skill: Engineering\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Engineering recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Engineering",
+            "bot_response": "\u2705 Attestation for Skill: Engineering recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@frank has shown amazing marketing expertise lately!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Marketing\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Marketing recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Marketing",
+            "bot_response": "\u2705 Attestation for Skill: Marketing recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Big shout\u2011out to @gina for their stellar legal skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Legal\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Legal recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Legal",
+            "bot_response": "\u2705 Attestation for Skill: Legal recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@harry's finance game is absolutely top notch \ud83d\ude80"
+        },
+        "output": "{\n  \"skill\": \"Skill: Finance\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Finance recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Finance",
+            "bot_response": "\u2705 Attestation for Skill: Finance recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Can we take a moment to appreciate @ivan's brilliant work in operations?"
+        },
+        "output": "{\n  \"skill\": \"Skill: Operations\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Operations recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Operations",
+            "bot_response": "\u2705 Attestation for Skill: Operations recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "Seriously impressed by how @juliet handles all things sales."
+        },
+        "output": "{\n  \"skill\": \"Skill: Sales\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Sales recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "Skill: Sales",
+            "bot_response": "\u2705 Attestation for Skill: Sales recorded. Thanks!"
+        }
+    },
+    {
+        "input": {
+            "text": "@zoe is an incredible magician on stage!"
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'magician' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Nice try, but that's not on my skills list."
+        }
+    },
+    {
+        "input": {
+            "text": "I think @yuri could do better with his design skills."
+        },
+        "output": "{\n  \"skill\": \"Skill: Design\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Design recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Is that even a skill? Maybe aim for something from the list next time."
+        }
+    },
+    {
+        "input": {
+            "text": "Huge kudos to @xander for both engineering and marketing wizardry!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Engineering\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Engineering recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Compliments are great\u2014if they actually reference a valid skill."
+        }
+    },
+    {
+        "input": {
+            "text": "@wanda rocks at knitting sweaters."
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'knitting sweaters' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Endorsements need to be positive and specific, not that."
+        }
+    },
+    {
+        "input": {
+            "text": "@victor's support was... acceptable, I guess."
+        },
+        "output": "{\n  \"skill\": \"Skill: Support\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Support recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "I'm confused\u2014are we praising or roasting here?"
+        }
+    },
+    {
+        "input": {
+            "text": "Props to @ursula for her unmatched pythonic sorcery."
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'pythonic sorcery' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Endorse one skill, not your entire shopping list."
+        }
+    },
+    {
+        "input": {
+            "text": "@tim is okay at product and sales, nothing special."
+        },
+        "output": "{\n  \"skill\": \"Skill: Product\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Product recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Negative vibes detected. Try applause instead of critique."
+        }
+    },
+    {
+        "input": {
+            "text": "@sophie needs to up her data game before I'd endorse her."
+        },
+        "output": "{\n  \"skill\": \"Skill: Data\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Data recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "I only process glowing praise, not half\u2011hearted remarks."
+        }
+    },
+    {
+        "input": {
+            "text": "Shoutout to @roger for cookie\u2011baking excellence!"
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'cookie-baking' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Cookie\u2011baking? Cute, but not on the allowed skills."
+        }
+    },
+    {
+        "input": {
+            "text": "@quentin's talent? Meh."
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'talent' as a specific skill from the list. Try mentioning a particular skill like 'engineering' or 'design'!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Let's stick to one real skill, shall we?"
+        }
+    },
+    {
+        "input": {
+            "text": "@peter is a master of multitasking, whatever that means."
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'multitasking' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Nice try, but that's not on my skills list."
+        }
+    },
+    {
+        "input": {
+            "text": "Appreciate @olga for her 'general awesomeness' \ud83e\udd37\u200d\u2642\ufe0f"
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'general awesomeness' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Is that even a skill? Maybe aim for something from the list next time."
+        }
+    },
+    {
+        "input": {
+            "text": "@nina's operations skills are questionable at best."
+        },
+        "output": "{\n  \"skill\": \"Skill: Operations\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Operations recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Compliments are great\u2014if they actually reference a valid skill."
+        }
+    },
+    {
+        "input": {
+            "text": "Thumbs up to @mike for being a cool guy."
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'being a cool guy' as a real skill. Pick one from the list next time.\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Endorsements need to be positive and specific, not that."
+        }
+    },
+    {
+        "input": {
+            "text": "Round of applause for @luke for his engineering AND design efforts!"
+        },
+        "output": "{\n  \"skill\": \"Skill: Engineering\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Engineering recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "I'm confused\u2014are we praising or roasting here?"
+        }
+    },
+    {
+        "input": {
+            "text": "@kate's marketing vibe is kinda okay, not great."
+        },
+        "output": "{\n  \"skill\": \"Skill: Marketing\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Marketing recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Endorse one skill, not your entire shopping list."
+        }
+    },
+    {
+        "input": {
+            "text": "I despise how @john handles finance."
+        },
+        "output": "{\n  \"skill\": \"Skill: Finance\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Finance recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Negative vibes detected. Try applause instead of critique."
+        }
+    },
+    {
+        "input": {
+            "text": "@irene tried legal work once; it was a disaster."
+        },
+        "output": "{\n  \"skill\": \"Skill: Legal\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Legal recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "I only process glowing praise, not half\u2011hearted remarks."
+        }
+    },
+    {
+        "input": {
+            "text": "@hank is decent at support, but nothing to write home about."
+        },
+        "output": "{\n  \"skill\": \"Skill: Support\",\n  \"bot_response\": \"\u2705 Attestation for Skill: Support recorded. Thanks!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Cookie\u2011baking? Cute, but not on the allowed skills."
+        }
+    },
+    {
+        "input": {
+            "text": "Can't believe @grace messed up the sales pitch again.",
+            "json_schema_str": "'skill': skill title or undefined, 'bot_response': bot's response to attestation"
+        },
+        "output": "{\n  \"skill\": \"undefined\",\n  \"bot_response\": \"Nice try, but I can't endorse 'sales' as a real skill based on that. Try mentioning a clear, positive endorsement!\"\n}",
+        "expected_output": {
+            "skill": "undefined",
+            "bot_response": "Let's stick to one real skill, shall we?"
+        }
+    }
+]

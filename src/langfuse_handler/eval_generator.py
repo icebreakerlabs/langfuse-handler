@@ -56,8 +56,9 @@ class DatasetGenerator:
             dataset_name=dataset_name,
             **item
         )
+        print(f"✅ Successfully created dataset item in '{dataset_name}'")
     
-    def generate_dataset(self, dataset_name: str, dataset_params: dict = {}, data: list[dict] = None):
+    def generate_dataset(self, dataset_name: str, dataset_params: dict = {}, data: list[dict] = None, sleep_delay: float = 0.0):
         """
         Create a dataset in Langfuse and optionally add items to it.
 
@@ -65,17 +66,25 @@ class DatasetGenerator:
             dataset_name (str): The name of the dataset.
             dataset_params (dict, optional): Additional parameters for dataset creation.
             data (list[dict], optional): List of items to add to the dataset.
+            sleep_delay (float, optional): Time to sleep between dataset item creations in seconds. Defaults to 0.0.
         """
         self.langfuse.create_dataset(
             name=dataset_name,
             **dataset_params
         )
+        print(f"✅ Successfully created dataset '{dataset_name}'")
         
         if data is None:
             return
 
-        for item in data:
+        for i, item in enumerate(data):
             self.create_dataset_item(dataset_name, item)
+            
+            # Sleep between items (except for the last item)
+            if sleep_delay > 0 and i < len(data) - 1:
+                time.sleep(sleep_delay)
+        
+        print(f"✅ Successfully added {len(data)} items to dataset '{dataset_name}'")
 
 class ExperimentRunner:
     """
@@ -163,7 +172,7 @@ class ExperimentRunner:
         """
         
         
-        prompt_runner = PromptRunner(prompt_name, env_path=self.env_path)
+        prompt_runner = PromptRunner(prompt_name)
 
         dataset = self.langfuse.get_dataset(dataset_name)
 

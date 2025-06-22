@@ -112,7 +112,7 @@ class PromptRunner:
 
         # stringify the json schema if it exists
         json_schema = config.pop('json_schema', {})
-        if json_schema:
+        if json_schema and isinstance(json_schema, dict) and len(json_schema) > 0:
             input_data['json_schema_str'] = ', '.join([f"'{key}': {value}" for key, value in json_schema.items()])
             
         messages = self.prompt.compile(

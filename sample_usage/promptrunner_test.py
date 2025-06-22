@@ -1,7 +1,7 @@
 from langfuse_handler import PromptRunner
 import json
 
-prompt_runner = PromptRunner("skill-matcher", env_path="../.env")
+prompt_runner = PromptRunner("skill-matcher")
 
 
 response = prompt_runner.run_prompt(input_data={
@@ -14,5 +14,5 @@ response = prompt_runner.run_prompt(input_data={
 
 print(response)
 
-with open('../data/prompt.json', 'w') as f:
+with open('data/prompt.json', 'w') as f:
     json.dump(prompt_runner.get_prompt(), f, indent=2)
